@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="header">
+    <nav>
+        <ul>
+            <li class="homeLblPos"><a class="btn" href="{{ url_for('home') }}">Home</a></li>
+            <li class="registerLblPos">
+                <a class="btn" href="#">Manage Users</a>
+                <ul class="dropdown">
+                    <li><a class="btn" href="{{ url_for('register') }}">Add User</a></li>
+                    <li><a class="btn" href="{{ url_for('users') }}">Edit User</a></li>
+                </ul>
+            </li>
+            <li class="logoutLblPos"><a class="btn" href="{{ url_for('logout') }}">Signout</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<form action="/data" method="POST" name="checks" style="font-size:90%">
+    <table>
+        <tr>
+            <td>
+                <div class="container">
+                    <legend class="border-bottom mb-4">All Attributes</legend>
+                    <select class="form-control" name=attr[] method="POST" action="/" size="17" multiple>
+                        {% for a in all_attrib %}
+                        {% if a in sel_attrib %}
+                        <option value="{{ a }}" selected>{{a}}</option>
+                        {% else %}
+                        <option value="{{a}}">{{a}}</option>
+                        {% endif %}
+                        {% endfor %}
+                    </select>
+
+                    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                    <script type=text/javascript> $("select").mousedown(function(e){ e.preventDefault(); var
+                        select=this; var scroll=select.scrollTop; e.target.selected=!e.target.selected;
+                        setTimeout(function(){select.scrollTop=scroll;}, 0); $(select).focus();
+                        }).mousemove(function(e){e.preventDefault()}); </script> <br>
+                    <input formtarget="_blank" class="btn btn-primary" type="submit" value="Fetch">
+                </div>
+            </td>
+            <td></td>
+            <td>
+                <div class="container" id="temp1">
+                    <legend class="border-bottom mb-4">Populate existing templates</legend>
+                    <select class="form-control" name=tmplt method="POST">
+                        <option value="0" disabled selected>Select Template</option>
+                        {% for t in templates %}
+                        <option value="{{t}}" {% if t==template %} selected {% endif %}>{{t}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <input class="btn btn-primary" type="submit" value="Select" formaction="/home">
+                    <input class="btn btn-primary" type="submit" value="Update" formaction="/update">
+                    <input class="btn btn-primary" type="submit" value="Delete" formaction="/delete">
+                    <br></br>
+                </div>
+                <div class="container" id="temp2">
+                    <legend class="border-bottom mb-4">Save Template</legend>
+                    <input class="form-control" name="new_template_name" style="width: 20em" type="text" placeholder="New template name">
+                    <br>
+                    <input class="btn btn-primary" type="submit" value="Save New Template" formaction="/save">
+                    <br></br>
+                    <textarea class="form-control" name="template_attribs" rows="4" cols="50" placeholder="Paste Attributes here (comma seperated)"></textarea>
+                    <br></br>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+{% endblock content %}

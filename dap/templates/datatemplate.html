@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="" method="POST" name="checks" style="font-size:90%">
+    <table>
+        <tr>
+            <td>
+                <div class="container">
+                    <legend class="border-bottom mb-4">All Attributes</legend>
+                    <select name="all-checks" multiple="multiple" size="20">
+                        {% for a in all_attrib %}
+                        {% if a in sel_attrib  %}
+                        <option type='checkbox' value={{ a}} name='all-checks' selected> {{a}}</option>
+                        {% else %}
+                        <option type='checkbox' value={{ a}} name='all-checks'> {{a}}</option>
+                        {% endif %}
+                        {%endfor%}
+                    </select>
+                    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                    <script type=text/javascript> $("select").mousedown(function(e){ e.preventDefault(); var
+                        select=this; var scroll=select.scrollTop; e.target.selected=!e.target.selected;
+                        setTimeout(function(){select.scrollTop=scroll;}, 0); $(select).focus();
+                        }).mousemove(function(e){e.preventDefault()}); </script> <br>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+{% endblock content %}

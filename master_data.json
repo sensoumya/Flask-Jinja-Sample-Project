@@ -1,0 +1,3728 @@
+[
+  {
+    "devops": {
+      "build": {
+        "buildid": 127,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB121",
+        "projectname": "DevOps_jenkins1",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-06-14T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 129,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB122",
+        "projectname": "DevOps_jenkins2",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-07-14T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 169,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB123",
+        "projectname": "DevOps_jenkins3",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-21T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 159,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB121",
+        "projectname": "DevOps_jenkins4",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-01T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 130,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB124",
+        "projectname": "DevOps_jenkins5",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-14T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 132,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB125",
+        "projectname": "DevOps_jenkins",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-11T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 142,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB121",
+        "projectname": "DevOps_jenkins5",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-04T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 158,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB121",
+        "projectname": "DevOps_jenkins3",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-02T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 147,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB123",
+        "projectname": "DevOps_jenkins2",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-07-18T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 156,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB124",
+        "projectname": "DevOps_jenkins1",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-03T05:46:40.748589"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 170,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB125",
+        "projectname": "DevOps_jenkins2",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-10T05:16:40.738550"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 148,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB122",
+        "projectname": "DevOps_jenkins3",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-07-29T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 141,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB124",
+        "projectname": "DevOps_jenkins3",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-07-29T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 181,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB121",
+        "projectname": "DevOps_jenkins5",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-11T05:26:30.738570"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 150,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB124",
+        "projectname": "DevOps_jenkins",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-19T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 149,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB123",
+        "projectname": "DevOps_jenkins4",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-07-24T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 151,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB123",
+        "projectname": "DevOps_jenkins2",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-15T05:56:40.738579"
+    }
+  },
+  {
+    "devops": {
+      "build": {
+        "buildid": 128,
+        "actual_duration": 776.75,
+        "created_on": "2019-06-14T05:42:31.189",
+        "error": "No error",
+        "failurerate": 14.5,
+        "jobname": "Stage_Workspace/carts_java/Build_job",
+        "meantimebetweenfailure": 126823.5,
+        "meantimetorecover": 59111.5,
+        "status": "failed",
+        "successrate": 80.5
+      },
+      "codecommit": {
+        "codecommitid": "bfbd8f1ef5df931fcc003cde80cc5172ec4d1bd9",
+        "associationid": "AINDEVOPS-215",
+        "associtationtype": "WorkItem",
+        "workitemtype": "Story",
+        "count": 100,
+        "created_by": "hartman.aaron",
+        "created_on": "2019-05-27T16:29:09.155",
+        "details": "Commit for StoryID:AINDEVOPS-215",
+        "type": "git"
+      },
+      "codebranch": {
+        "codebranchid": "89a1533c43dd9254f33b5e0f29c9c0ff",
+        "name": "Developer"
+      },
+      "codequality": {
+        "complexity": {
+          "cognitive_complexity": 26,
+          "complexity": 203
+        },
+        "duplication": {
+          "duplicated_lines": 40
+        },
+        "issues": {
+          "blocker_issues": 1,
+          "critical_issues": 7,
+          "major_issues": 23,
+          "minor_issues": 26,
+          "open_issues": 28,
+          "violations": 29
+        },
+        "maintainability": {
+          "code_smells": 26,
+          "sqale_debt_ratio": 0.3,
+          "sqale_index": 122,
+          "sqale_rating": 1.0
+        },
+        "reliability": {
+          "bugs": 1,
+          "reliability_remediation_effort": 15
+        },
+        "security": {
+          "security_rating": 1,
+          "security_remediation_effort": 20,
+          "vulnerabilities": 2
+        },
+        "size": {
+          "classes": 40,
+          "functions": 144,
+          "ncloc": 1248
+        },
+        "unittests": {
+          "coverage": 1.0,
+          "line_coverage": 1.0,
+          "test_errors": 0,
+          "test_execution_time": 209.5,
+          "test_success_density": 100.0,
+          "tests": 24,
+          "uncovered_conditions": 1
+        }
+      },
+      "deployment": {
+        "deploymentid": "bfbd8eeef5df854fcc003cde80cd5172ec4d1bd9",
+        "created_on": "2019-06-14T05:42:31.189",
+        "container": {
+          "clairscan": {
+            "total_vulnerabilities": 11,
+            "high_vulnerabilities": 3,
+            "medium_vulnerabilities": 2,
+            "low_vulnerabilities": 1,
+            "unapprovedimages": 10,
+            "imagename": "cartsjava"
+          }
+        }
+      },
+      "environment": {
+        "environmentid": "bfeddf560ff988c07141df6135a9bfcf",
+        "created_on": "2019-05-27T16:29:09.155",
+        "kubernetes": {
+          "node": {
+            "name": "ip-13.124.25.230-compute",
+            "pod.allocatable.total": 50,
+            "pod.capacity.total": 60,
+            "memory": {
+              "total": 8374288384,
+              "free": 178040832,
+              "available.bytes": 789099000,
+              "actual.used.bytes": 5001486336,
+              "usage.bytes": 8196247552,
+              "capacity.bytes": 90000
+            },
+            "cpu": {
+              "idle.pct": 2.8792,
+              "iowait.pct": 0,
+              "system.pct": 0.2365,
+              "user.pct": 0.8843,
+              "total.pct": 0.2731,
+              "cores": 2,
+              "load.1": 0.29,
+              "load.5": 0.46,
+              "load.15": 0.43
+            },
+            "network": {
+              "rx.bytes": 42606688417,
+              "tx.bytes": 18630264181
+            },
+            "diskio": {
+              "read.bytes": 5251965952,
+              "read.count": 730510,
+              "write.count": 730510,
+              "write.bytes": 5251965952
+            },
+            "filesystem": {
+              "available": 101920063488,
+              "free_files": 31843549,
+              "total": 128767627264,
+              "free": 107519873024,
+              "files": 33554432
+            }
+          },
+          "namespace": {
+            "name": "ethan",
+            "totalpods": 12,
+            "cpu": {
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832
+            },
+            "network": {
+              "rx.bytes": 288324,
+              "tx.bytes": 279633
+            }
+          },
+          "pod": {
+            "name": "mypod-1234hehrke",
+            "runningcontainers": 10,
+            "stoppedcontainers": 5,
+            "totalcontainers": 14,
+            "start_time": "2019-05-27T16:29:09.155",
+            "cpu": {
+              "usage.limit.pct": 70,
+              "usage.node.pct": 50,
+              "usage.nanocores": 259442
+            },
+            "memory": {
+              "usage.bytes": 18296832,
+              "usage.node.pct": 70,
+              "available.bytes": 809090
+            }
+          },
+          "kubebenchscan": {
+            "pass": 12,
+            "fail": 2,
+            "warning": 1,
+            "total": 15
+          }
+        }
+      },
+      "testquality": {
+        "testqualityid": "4de11a264efc21523aafb3ca1dcd18dc",
+        "created_on": "2019-06-14T05:42:31.189",
+        "functionaltest": {
+          "duration": 500.5,
+          "fail": 6,
+          "pass": 2,
+          "total": 8
+        },
+        "nonfunctionaltest": {
+          "duration": 400.5,
+          "fail": 5,
+          "pass": 15,
+          "total": 20
+        },
+        "perftest": {
+          "fail": 12,
+          "maxresponsetime": 446.5,
+          "meanrequestpersecond": 25.5,
+          "minresponsetime": 2.5,
+          "pass": 0,
+          "responsetime95percentile": 90,
+          "standarddeviation": 122.5,
+          "total": 12
+        }
+      },
+      "projectdetails": {
+        "projectid": "AB126",
+        "projectname": "DevOps_jenkins6",
+        "tool_instance_url": "<a href='https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa'>https://jiraconnector4acn.atlassian.net/secure/Dashboard.jspa</a>"
+      },
+      "timestamp": "2019-08-27T05:56:40.738579"
+    }
+  }
+]

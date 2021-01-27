@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  /* background: #fafafa; */
+  color: #333333;
+  margin-top: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.phx-flex-logo {
+    padding: 1rem;
+    position:relative;
+    z-index:1;
+    left:7%;
+}
+
+.phx-brand {
+    height: auto;
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    margin-top: -110px;
+}
+
+.phx-container-pos {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.btn-cls {
+  font-family: "Roboto", sans-serif;
+  /* text-transform: uppercase; */
+  /* outline: 0; */
+  background: #4CAF50 !important;
+  width: 50% !important;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-left: 24% !important;
+}
+
+.btn-cls:hover {
+  background: #43A047 !important;
+}
+
+.block {
+  display: block;
+  width: 80%;
+  border: none;
+  background-color: #4CAF50;
+  color: whitesmoke;
+  padding: 70px 70px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #43A047;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.logoutLblPos{
+   position:absolute;
+   right: 5%;
+   top:-95px;
+   font-family: "Roboto", sans-serif;
+   border: none;
+}
+.registerLblPos{
+   position:absolute;
+   right:12%;
+   top:-95px;
+   font-family: "Roboto", sans-serif;
+}
+
+.registerLblPos ul{
+  position:absolute;
+  padding:0;
+  left:0;
+  display:none; /* hides sublists */
+}
+
+.registerLblPos li a {
+display:block;
+padding:0;
+text-decoration:none;
+width:125px; /* this is the width of the menu items */
+line-height:35px; /* this is the hieght of the menu items */
+color:cadetblue;
+}
+
+.registerLblPos li:hover ul ul {display:none;}
+.registerLblPos li:hover ul {display:block;} 
+.registerLblPos li li:hover ul {
+display:block;
+margin-left:200px;
+margin-top:-35px;
+}
+
+
+.homeLblPos{
+   position:absolute;
+   right:23%;
+   top:-95px;
+   font-family: "Roboto", sans-serif;
+   border: none;
+}
+
+.btn-logout {
+  font-family: "Roboto", sans-serif;
+  background: rgb(98, 202, 102) !important;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.btn-logout:hover {
+  background-color: #43A047;
+}
+
+.btn{
+    color: #43A047 ;
+    font-family:  "Roboto", sans-serif;
+}
+
+.btn:hover {
+    color: rgb(235, 238, 235)  ;
+    background: #4CAF50
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgb(98, 202, 102) !important;
+    border-color: rgb(98, 202, 102) !important;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #43A047 !important;
+    border-color: #43A047 !important;
+}
+
+.del-btn {
+  font-family: "Roboto", sans-serif;
+  /* text-transform: uppercase; */
+  /* outline: 0; */
+  background: rgb(231, 117, 117) !important;
+  width: 50% !important;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-left: 24% !important;
+}
+
+.del-btn:hover {
+  background: rgb(185, 94, 94)  !important;
+}
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: contents;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+
+.form-radio li{
+     margin-right: 50px;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    background: #f2f2f2;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #fff;
+    background: #939393;
+}
+
+ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+ul li:hover ul.dropdown{
+    display: block; /* Display the dropdown */
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+legend{
+  font-size: 140%;
+}

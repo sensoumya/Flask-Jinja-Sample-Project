@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="header">
+    <nav>
+        <ul>
+            <li class="homeLblPos"><a class="btn" href="{{ url_for('home') }}">Home</a></li>
+            <li class="registerLblPos">
+                <a class="btn" href="#">Manage Users</a>
+                <ul class="dropdown">
+                    <li><a class="btn" href="{{ url_for('register') }}">Add User</a></li>
+                    <li><a class="btn" href="{{ url_for('users') }}">Edit User</a></li>
+                </ul>
+            </li>
+            <li class="logoutLblPos"><a class="btn" href="{{ url_for('logout') }}">Signout</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="form col-md-6">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Add User</legend>
+            <div class="form-group">
+                {% if form.username.errors %}
+                {{ form.username(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.username.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.username(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {% if form.password.errors %}
+                {{ form.password(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.password(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {% if form.confirm_password.errors %}
+                {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.confirm_password.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.confirm_password(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div style="margin-left: 37%">
+                {% if form.access.errors %}
+                {{ form.access(class="form-radio is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.access.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.access(class="form-radio") }}
+                {% endif %}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn-cls",style="font-size: 22px") }}
+        </div>
+    </form>
+</div>
+{% endblock content %}
